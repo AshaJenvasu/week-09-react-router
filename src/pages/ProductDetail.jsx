@@ -7,6 +7,8 @@ export default function ProductDetail() {
 
   const product = products.find((product) => product.id === productId);
 
+  //ใช้เพื่อให้codeหน้านี้รับรู้ว่าตัวเลขในเพจนั้นเป็นเลขอะไรถ้าเลขตรงกันกับproduct.id ให้แสดงผล
+
   if (!product) {
     return <div>Product not found</div>;
   }

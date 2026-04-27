@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         element: <Products />,
       },
       {
-        path: "products/:productId",
+        path: "products/:productId", //จะกลายเป็น "ชื่อกุญแจ" (Key)
         element: <ProductDetail />,
       },
     ],

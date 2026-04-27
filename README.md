@@ -1,32 +1,10 @@
-## Vite + React Starter
+สรุปภาพรวมการไหลของข้อมูล (Data Flow)
+ต้นทาง (User): คลิกปุ่มดูรายละเอียดสินค้า ID 5 -> URL เปลี่ยนเป็น /product/5
 
-A concise starter codebase for React apps built with Vite. It ships with modern tooling, Tailwind CSS v4, and basic project scaffolding so you can start building immediately.
+ตัวกลาง (Router): เห็นเลข 5 อยู่ในตำแหน่ง :productId เลยจำไว้
 
-### What's Included
-- **Vite Build Tool:** Fast dev server, optimized builds, and zero-config defaults via `vite.config.js`.
-- **React 19:** Latest React and `react-dom` set up with `@vitejs/plugin-react`.
-- **Tailwind CSS v4:** Tailwind configured using `@tailwindcss/vite` with styles in `src/index.css`.
-- **ESLint:** Base config in `eslint.config.js` with React Hooks and React Refresh plugins.
-- **Starter Files:** `index.html`, `src/main.jsx`, `src/App.jsx`, `src/assets/`, and `public/` ready to customize.
-- **Deployment Config:** `vercel.json` for path resolution when deploying to Vercel.
+ตัวรับ (useParams): ไปดึงเลข 5 มาส่งให้ Component ProductDetail
 
-### Scripts
-- `dev`: Start the Vite dev server.
-- `build`: Create a production build.
-- `preview`: Preview the production build locally.
-- `lint`: Run ESLint on the project.
+ตัวค้นหา (find): เอาเลข 5 ไปค้นในกองข้อมูล products ที่ import มา
 
-### Project Structure
-```
-vite-react-app/
-├─ index.html
-├─ eslint.config.js
-├─ vite.config.js
-├─ vercel.json
-├─ public/
-└─ src/
-	├─ main.jsx
-	├─ App.jsx
-	├─ index.css
-	└─ assets/
-```
+ตัวแสดงผล (JSX): พอเจอข้อมูลสินค้าชิ้นที่ 5 ปุ๊บ ก็เอาชื่อ (product.name) ราคา (product.price) มาวางบนหน้าจอ
