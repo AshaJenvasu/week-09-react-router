@@ -1,20 +1,27 @@
+import sketch1 from "../assets/sketch1.png";
+import sketch2 from "../assets/sketch2.png";
+import sketch3 from "../assets/sketch3.png";
+
 export const products = [
   {
     id: "1",
-    name: "Product A",
-    description: "This is fantastic product.",
-    price: 9.99,
+    title: "Frieren",
+    category: "Character Design",
+    image: sketch1,
+    tools: "Clip Studio Paint",
   },
   {
     id: "2",
-    name: "Product B",
-    description: "This is amazing product.",
-    price: 19.99,
+    title: "Makima",
+    category: "Character Design",
+    image: sketch2,
+    tools: "Clip Studio Paint",
   },
   {
     id: "3",
-    name: "Product C",
-    description: "This is 素晴らしいproductでーす",
-    price: 29.99,
+    title: "Akane",
+    category: "Character Design",
+    image: sketch3,
+    tools: "Clip Studio Paint",
   },
 ];
